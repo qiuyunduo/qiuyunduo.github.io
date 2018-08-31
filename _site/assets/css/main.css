@@ -1,4 +1,3 @@
-@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 /*
 	Prologue by HTML5 UP
@@ -1508,17 +1507,47 @@ button,
 /* Icons */
 .icon {
   text-decoration: none; }
-  .icon:before {
+  .icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     display: inline-block;
-    font-family: FontAwesome;
     font-size: 1.25em;
     text-decoration: none;
     font-style: normal;
-    font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
   .icon > .label {
+    display: none; }
+
+.icon-r {
+  text-decoration: none; }
+  .icon-r::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    display: inline-block;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .icon-r > .label {
+    display: none; }
+
+.icon-b {
+  text-decoration: none; }
+  .icon-b::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    display: inline-block;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .icon-b > .label {
     display: none; }
 
 /* Header */
@@ -1615,7 +1644,7 @@ button,
       position: relative;
       display: block;
       font-size: 0.8em; }
-      #nav ul li a span:before {
+      #nav ul li a span::before {
         position: absolute;
         left: 0;
         color: #41484c;
@@ -1626,7 +1655,7 @@ button,
       background: rgba(0, 0, 0, 0.15);
       box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
       color: #fff; }
-      #nav ul li a.active span:before {
+      #nav ul li a.active span::before {
         color: #e27689; }
 
 /* Footer */
@@ -1761,7 +1790,7 @@ button,
       padding-bottom: 0.5em; }
       #nav ul li a span {
         padding-right: 2.25em; }
-        #nav ul li a span:before {
+        #nav ul li a span::before {
           left: 100%;
           margin-left: -1.25em;
           line-height: 2.25em; }
@@ -1869,11 +1898,11 @@ button,
       height: 100%;
       outline: 0;
       border: 0; }
-      #headerToggle .toggle:before {
-        font-family: FontAwesome;
+      #headerToggle .toggle::before {
+        font-family: "Font Awesome 5 Free";
         text-decoration: none;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 900;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         content: '\f0c9';
